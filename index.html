@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Pavan Kardile - Software Developer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="light-mode">
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+    </button>
+
     <!-- Navigation -->
     <nav>
-        <div class="logo">Portfolio</div>
+        <div class="logo">Pavan Kardile</div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#awards">Awards</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="hamburger">☰</div>
@@ -21,15 +31,59 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <h1>Hi, I'm [Your Name]</h1>
-        <p>Web Developer | Designer | Creator</p>
-        <a href="#projects" class="cta-button">View My Work</a>
+        <h1>Hi, I'm <span class="typing">Pavan Kardile</span></h1>
+        <p>Software Developer | Java | Spring Boot | Microservices</p>
+        <div class="hero-buttons">
+            <a href="#projects" class="cta-button">Explore My Work</a>
+            <a href="Resume_Pavan_Kardile.pdf" class="cta-button resume-button" download>Download Resume</a>
+        </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <h2>About Me</h2>
-        <p>I'm a passionate web developer with experience in building responsive and user-friendly websites using HTML, CSS, and JavaScript. I love turning ideas into reality.</p>
+        <p>I'm a Software Developer with over 3 years of experience in Core Java, Spring Boot, and Database Management. Skilled in building scalable enterprise applications using Java 8, Microservices, SQL, and MQ, I thrive on solving complex technical challenges while ensuring quality and reliability.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <p>Core Java, C, Shell Scripting, Oracle SQL, HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-category">
+                <h3>Frameworks</h3>
+                <p>Spring Boot, Spring, Hibernate, Collections, Multithreading, Java 8, Microservices, REST APIs</p>
+            </div>
+            <div class="skill-category">
+                <h3>Databases</h3>
+                <p>Oracle Database, MySQL</p>
+            </div>
+            <div class="skill-category">
+                <h3>Tools/Platforms</h3>
+                <p>Windows, HP-UNIX, Linux, Git, Serena PVCS, GitHub, Postman</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2>Work Experience</h2>
+        <div class="experience-item">
+            <h3>Systems Engineer | Tata Consultancy Services</h3>
+            <p><em>Dec 2021 - Present | Navi Mumbai</em></p>
+            <p><strong>Project: SBI Development and Customization - CBS</strong></p>
+            <ul>
+                <li>Developed CBS Notification Engine Application, delivering real-time alerts for millions of banking transactions.</li>
+                <li>Optimized Java-based enterprise software, improving system performance by 20%.</li>
+                <li>Automated tasks using Unix/Linux shell scripts, reducing manual effort by 40%.</li>
+                <li>Implemented AES/RSA encryption, securing customer data and ensuring compliance.</li>
+                <li>Designed encryption/decryption mechanisms, enhancing file integrity by 30%.</li>
+                <li>Integrated TLS 1.2 and IBM MQ for secure data transmission using socket programming in C.</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Projects Section -->
@@ -37,47 +91,76 @@
         <h2>My Projects</h2>
         <div class="project-grid">
             <div class="project-card">
-                <img src="https://via.placeholder.com/300" alt="Project 1">
-                <h3>Project One</h3>
-                <p>A modern e-commerce website built with React.</p>
-                <a href="#" class="project-link">View Project</a>
+                <img src="https://via.placeholder.com/300" alt="CBS Notification Engine">
+                <h3>CBS Notification Engine</h3>
+                <p>Built a real-time alert system for banking transactions using Java, Spring Boot, and IBM MQ.</p>
+                <a href="#" class="project-link">View Details</a>
             </div>
             <div class="project-card">
-                <img src="https://via.placeholder.com/300" alt="Project 2">
-                <h3>Project Two</h3>
-                <p>A portfolio website with smooth animations.</p>
-                <a href="#" class="project-link">View Project</a>
+                <img src="https://via.placeholder.com/300" alt="Encryption Module">
+                <h3>Encryption Module</h3>
+                <p>Developed AES/RSA-based encryption for secure data handling in banking applications.</p>
+                <a href="#" class="project-link">View Details</a>
             </div>
             <div class="project-card">
-                <img src="https://via.placeholder.com/300" alt="Project 3">
-                <h3>Project Three</h3>
-                <p>A blog platform with dynamic content.</p>
-                <a href="#" class="project-link">View Project</a>
+                <img src="https://via.placeholder.com/300" alt="Automation Scripts">
+                <h3>Automation Scripts</h3>
+                <p>Created Unix/Linux shell scripts to automate system tasks, reducing manual effort by 40%.</p>
+                <a href="#" class="project-link">View Details</a>
             </div>
         </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Bachelor of Engineering</h3>
+            <p>Savitribai Phule Pune University | 2016 - 2020</p>
+            <p>CGPA: 7.75</p>
+        </div>
+        <div class="education-item">
+            <h3>Higher Secondary Certificate</h3>
+            <p>Maharashtra State Board | 2015 - 2016</p>
+            <p>Percentage: 75.38%</p>
+        </div>
+        <div class="education-item">
+            <h3>Secondary School Certificate</h3>
+            <p>Maharashtra State Board | 2013 - 2014</p>
+            <p>Percentage: 84.80%</p>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="awards">
+        <h2>Awards and Achievements</h2>
+        <ul>
+            <li><strong>TCS Award:</strong> Recognized for exceptional performance and project contributions.</li>
+            <li><strong>TCS Appreciation Note:</strong> Acknowledged for delivering high-quality solutions under tight deadlines.</li>
+            <li><strong>SBI Client Award:</strong> Honored for outstanding work in critical banking applications.</li>
+        </ul>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:pavan.kardile49@gmail.com">pavan.kardile49@gmail.com</a></p>
+            <p><strong>Phone:</strong> +917057024949</p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/pavan-kardile" target="_blank">linkedin.com/in/pavan-kardile</a></p>
+            <p><a href="Resume_Pavan_Kardile.pdf" class="resume-button" download>Download My Resume</a></p>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+        <p>© 2025 Pavan Kardile. All rights reserved.</p>
         <div class="social-links">
-            <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Twitter</a>
+            <a href="https://linkedin.com/in/pavan-kardile" target="_blank">LinkedIn</a>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-      </html>
+    </html>
